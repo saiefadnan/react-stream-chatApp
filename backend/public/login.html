@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messaging App</title>
+  <link rel="icon" type="image/png" href="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-chat-box-icon-web-white-png-image_4756254.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+                <legend>Secret Chat Service</legend> 
+        </div>
+    </nav>
+    <div id="box-container" class="box-container">
+        <h3>Welcome!</h3>
+        <div class="block">
+            <legend>Email*</legend>
+            <input type="text" id="logemailInput" placeholder="Enter your username">
+        </div>
+        <div class="block">
+            <legend>Password*</legend>
+            <input type="password" id="logpasswordInput" placeholder="Enter your password">
+        </div>
+        <div class="button-container">
+            <button id="loginButton">Log in</button>
+        </div>
+    </div>
+    <div class="error-container" id="error-container" display="none">
+        <legend></legend>
+    </div>
+    </div>
+    <a href="/signin" id="signin-link">Signin</a>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>  
+    <script type="module" src="login.js"></script>
+</body>
+</html>

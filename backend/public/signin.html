@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messaging App</title>
+  <link rel="icon" type="image/png" href="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-chat-box-icon-web-white-png-image_4756254.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+                <legend>Secret Chat Service</legend> 
+        </div>
+    </nav>
+    <div id="main" class="main"><div id="box-container" class="box-container">
+      <h3>Welcome!</h3>
+          <div class="block">
+              <legend>Email*</legend>
+              <input type="text" id="emailInput" placeholder="Enter your email">
+          </div>
+          <div class="block">
+              <legend>Name*</legend>
+              <input type="text" id="usernameInput" placeholder="Enter your username">
+          </div>
+          <div class="block">
+              <legend>Password*</legend>
+              <input type="password" id="passwordInput" placeholder="Enter your password">
+          </div>
+          <div class="block">
+              <legend>Profile Picture</legend>
+              <input type="file" id="profilePic" accept="image/*" placeholder="picture">
+          </div>
+              <div class="button-container">
+              <button id="registerButton">Sign in</button>
+          </div>
+      </div>
+      <div class="error-container" id="error-container">
+          <legend></legend>
+      </div>
+
+    </div>
+    <a href="/login" id="login-link">login</a>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>  
+    <script type="module" src="signin.js"></script>
+</body>
+</html>
